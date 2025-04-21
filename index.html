@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>1º Festival Gastronômico | Saberes do Campo à Cidade</title>
-    <meta name="description" content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana em Curitiba">
+    <meta name="description"
+        content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana em Curitiba">
     <meta name="keywords" content="festival gastronômico, comida regional, Curitiba, campo e cidade">
     <meta name="author" content="Seu Nome"> <!-- atualizar depois -->
     <meta property="og:title" content="1º Festival Gastronômico | Saberes do Campo à Cidade">
-    <meta property="og:description" content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana">
+    <meta property="og:description"
+        content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana">
     <meta property="og:type" content="website">
     <meta property="og:url" content="link do deploy"> <!-- atualizar depois -->
     <meta property="og:image" content="./src/assets/images/#"> <!-- atualizar depois -->
@@ -19,8 +22,9 @@
     <link rel="stylesheet" href="src/assets/css/#"> <!-- atualizar depois -->
     <link rel="stylesheet" href="src/assets/css/#"> <!-- atualizar depois -->
     <link rel="stylesheet" href="src/assets/css/#"> <!-- atualizar depois -->
+
 <body>
- 
+
     <header class="header" role="banner">
         <nav class="nav" role="navigation" aria-label="Navegação principal">
             <ul>
@@ -31,18 +35,62 @@
         </nav>
     </header>
 
+    <section id="inicio" class="img-inicio" aria-label="Seção de destaque inicial">
+        <div class="container">
+            <h2>Festejando a conexão campo-cidade</h2>
+            <p>1º Festival Gastronômico Sabores do campo na cidade!</p>
+            <p>Curitiba-PR</p>
+        </div>
+    </section>
 
     <main id="inicio" role="main">
-        <section class="hero">
-            <h1>1º Festival Gastronômico!</h1>
-            <p>Saberes do Campo à Cidade</p>
-            <p>15/16 e 17 de Novembro.</p>
+
+        <section class="contator-de-tempo"> <!-- atualizar depois contador de tempo-->
+            <h2>1º Festival Gastronômico Sabores do campo na cidade<span>!</span></h2>
+            <p>nessa sessão tera um contator de tempo para o festival</p>
         </section>
+
+        <section id="cards-flutuantes">
+            <!-- essa sessão tera cards flutuantes com bootstrap + modal - outras informacoes-->
+            <h2>Outras informações</h2>
+            <h3>titulo</h3>
+            <p>descricao.</p>
+            <button type="button">
+                Veja mais
+            </button>
+        </section>
+
+        <section id="contato" class="formulario-contato" aria-label="Seção de contato e interatividade"><!-- essa sessão tera um formulario -->
+            <h2>Entre em contato</h2>
+            <p>Envie uma sugestão, tire dúvidas ou compartilhe seu feedback!</p>
+
+            <form action="#" method="post"> <!-- atualizar depois -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="duvidas">Tirar dúvidas</option>
+                    <option value="sugestoes">Enviar sugestões</option>
+                    <option value="feedback">Dar feedback sobre o evento</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
     </main>
-
-
     <footer class="footer" role="contentinfo">
         <p>2025 Festival Saberes do Campo à Cidade</p>
     </footer>
+
 </body>
+
 </html>
