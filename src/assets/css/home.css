@@ -1,0 +1,150 @@
+@import url("keyframes.css");
+
+:root {
+    --white: #FFF6DA;
+    --text-color: #333333;
+    --accent-color: #E67E22;
+    --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+main {
+    padding-top: 80px; /* n posso esquecer de conferir e ajustar depois de colocar imagem conforme a altura do seu header */
+}
+
+.banner {
+    background: url("../images/img-agrinho.jpg") no-repeat center center;  /* adicionar imagem oficial do evento (em construcao) */
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    margin-top: 7.5px; /
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+}
+
+#inicio .container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+#inicio h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: var(--text-shadow);
+    line-height: 1.3;
+}
+
+#inicio p {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    font-weight: 200;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 10px;
+}
+
+#inicio .local {
+    margin-top: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(255, 246, 218, 0.2);
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 246, 218, 0.3);
+}
+
+.scroll-button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    animation: up-and-down 2s infinite;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.scroll-button:hover {
+    color: var(--accent-color);
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 80vh;
+    }
+    
+    main {
+        padding-top: 70px;
+    }
+    
+    .banner {
+        margin-top: -70px;
+    }
+    
+    #inicio h2 {
+        font-size: 1.8rem;
+    }
+    
+    #inicio p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 70vh;
+    }
+    
+    #inicio h2 {
+        font-size: 1.5rem;
+    }
+    
+    #inicio p {
+        font-size: 0.9rem;
+    }
+    
+    .scroll-button {
+        font-size: 1.5rem;
+        bottom: 30px;
+    }
+}
