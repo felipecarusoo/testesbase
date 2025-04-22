@@ -10,22 +10,12 @@
     --border-radius: 16px; /* Nova variável para bordas arredondadas */
 }
 
-body {
-    background-color: var(--white);
-    color: var(--text-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 main {
     padding-top: 80px; /* n posso esquecer de conferir e ajustar depois de colocar imagem conforme a altura do seu header */
 }
 
 .banner {
-    background: url("../images/img-agrinho.jpg") no-repeat center center; /* n posso esquecer de conferir com a imagem principal */
+    background: url("../images/Banner1.png") no-repeat center center; /* n posso esquecer de conferir com a imagem principal */
     background-size: cover;
     height: calc(100vh - 6px); 
     min-height: 594px; 
@@ -73,7 +63,7 @@ main {
 }
 
 #inicio .local {
-    margin-top: 1rem;
+    margin-top: 22.5rem;
     font-size: clamp(0.8rem, 2vw, 1rem);
     padding: 0.5rem 1.5rem;
     background-color: rgba(255, 246, 218, 0.2);

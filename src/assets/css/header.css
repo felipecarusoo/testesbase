@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #A94A4A; /* vermelho baton atualizar depois na lista de variaveis*/
+  background-color: #A94A4A; 
   position: sticky; 
-  top: 0; /* Ele vai se fixar no topo da página quando rolar */
-  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  top: 0; 
+  z-index: 1000; 
+  height: 80px;
+  min-height: 80px; 
 }
 
 .logo {
-  height: 40px;
+  max-height: 200%; /* conferir problema de renderização da imagem, imagem carrega maior depois diminui para tamanho ideal */
+  width: auto;
+  object-fit: contain;
+  display: block; 
 }
 
 .header-nav {
@@ -21,18 +28,34 @@
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  align-items: center; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .header-list-item a {
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  font-family: "JetBrains Mono", monospace;
   text-decoration: none;
-  color: #fff5e0; /* tom creme atualizar depois na lista de variaveis*/
+  text-transform: capitalize;
+  color: #fff5e0;
   transition: transform 0.2s ease, color 0.2s ease;
-  display: inline-block;
+  line-height: 1; 
 }
 
 .header-list-item a:hover {
-  color: #889E73; /* tom verde atualizar depois na lista de variaveis*/
+  color: #889E73; /* Tom verde */
   transform: scale(1.05);
   font-weight: 700;
 }
