@@ -7,6 +7,7 @@
     --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    --border-radius: 16px; /* Nova variável para bordas arredondadas */
 }
 
 body {
@@ -19,18 +20,21 @@ body {
     overflow-x: hidden;
 }
 
-
 main {
     padding-top: 80px; /* n posso esquecer de conferir e ajustar depois de colocar imagem conforme a altura do seu header */
 }
 
 .banner {
-    background: url("../images/img-agrinho.jpg") no-repeat center center;  /* adicionar imagem oficial do evento (em construcao) */
+    background: url("../images/img-agrinho.jpg") no-repeat center center; /* n posso esquecer de conferir com a imagem principal */
     background-size: cover;
-    height: 100vh;
-    min-height: 600px;
+    height: calc(100vh - 6px); 
+    min-height: 594px; 
     position: relative;
-    margin-top: 7.5px; /
+    margin: 7px 10px 0; 
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    width: calc(100% - 20px); 
 }
 
 #inicio {
@@ -110,15 +114,10 @@ main {
 
 @media (max-width: 768px) {
     .banner {
-        height: 80vh;
-    }
-    
-    main {
-        padding-top: 70px;
-    }
-    
-    .banner {
-        margin-top: -70px;
+        height: calc(80vh - 5px);
+        min-height: 475px;
+        margin: 6px 8px 0;
+        width: calc(100% - 16px);
     }
     
     #inicio h2 {
@@ -128,11 +127,19 @@ main {
     #inicio p {
         font-size: 1rem;
     }
+    
+    .scroll-button {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 480px) {
     .banner {
-        height: 70vh;
+        height: calc(65vh - 4px);
+        min-height: 386px;
+        margin: 4px 5px 0;
+        width: calc(100% - 10px);
+        border-radius: calc(var(--border-radius) * 0.6);
     }
     
     #inicio h2 {
@@ -145,6 +152,6 @@ main {
     
     .scroll-button {
         font-size: 1.5rem;
-        bottom: 30px;
+        bottom: 25px;
     }
 }
