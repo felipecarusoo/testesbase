@@ -15,16 +15,18 @@ main {
 }
 
 .banner {
-    background: url("../images/Banner1.png") no-repeat center center; /* n posso esquecer de conferir com a imagem principal */
+    background-image: url("../images/Banner1.png"); /* conferir responsividade da imagem, talves imagem sem textos, ou varias imagens com largura diferente para responsividade*/
     background-size: cover;
+    background-position: center center;
     height: calc(100vh - 6px); 
-    min-height: 594px; 
+    min-height: 594px;
     position: relative;
-    margin: 7px 10px 0; 
+    margin: 7px 10px 0;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
+
 }
 
 #inicio {
@@ -63,7 +65,7 @@ main {
 }
 
 #inicio .local {
-    margin-top: 22.5rem;
+    margin-top: 22rem;
     font-size: clamp(0.8rem, 2vw, 1rem);
     padding: 0.5rem 1.5rem;
     background-color: rgba(255, 246, 218, 0.2);
@@ -103,6 +105,7 @@ main {
 }
 
 @media (max-width: 768px) {
+    
     .banner {
         height: calc(80vh - 5px);
         min-height: 475px;
@@ -117,11 +120,17 @@ main {
     #inicio p {
         font-size: 1rem;
     }
+
+    #inicio .local {
+        margin-top: 18rem;
+    
+    }
     
     .scroll-button {
         font-size: 1.8rem;
     }
 }
+
 
 @media (max-width: 480px) {
     .banner {
@@ -139,7 +148,11 @@ main {
     #inicio p {
         font-size: 0.9rem;
     }
+
+    #inicio .local {
+        margin-top: 15rem;
     
+    }
     .scroll-button {
         font-size: 1.5rem;
         bottom: 25px;
