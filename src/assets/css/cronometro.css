@@ -1,0 +1,113 @@
+:root {
+    --verde: #3a6b35;
+    --laranja: #d9822b;
+    --fundo: #fff8f0;
+    --texto: #5c4033;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--texto);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contador-de-tempo {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 900px;
+    background-color: #fdf6ec;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Centralizando os títulos dentro da box */
+}
+
+.contador-de-tempo h2 {
+    font-size: 32px;
+    color: var(--verde);
+}
+
+.contador-de-tempo h2 span {
+    color: var(--laranja);
+}
+
+.contador-de-tempo h3 {
+    font-size: 22px;
+    color: var(--texto);
+    margin-top: 10px;
+    text-align: center; /* Centralizando o h3 também */
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.counter-digit {
+    text-align: center;
+    min-width: 100px;
+}
+
+.counter-digit-number {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--verde);
+    margin: 0;
+}
+
+.counter-digit-label {
+    font-size: 18px;
+    color: var(--texto);
+    margin-top: 5px;
+}
+
+/* Botão e animações */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#simular {
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#simular:hover {
+    background-color: #d97d1f;
+}
+
+#simular:active {
+    transform: scale(0.95); /* Animação de clicar */
+}
+
+/* Animação de pulso no cronômetro quando o festival começa */
+.evento-ativo .counter-digit-number {
+    animation: pulso 1s infinite;
+    color: #d97d1f; /* Altera a cor para um tom de laranja */
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
