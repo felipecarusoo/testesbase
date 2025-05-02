@@ -1,4 +1,6 @@
 @import url("keyframes.css");
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 :root {
     --white: #FFF6DA;
@@ -7,15 +9,21 @@
     --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
-    --border-radius: 16px; /* Nova variável para bordas arredondadas */
+    --border-radius: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
-    padding-top: 80px; /* n posso esquecer de conferir e ajustar depois de colocar imagem conforme a altura do seu header */
+    padding-top: 80px; 
 }
 
 .banner {
-    background-image: url("../images/Banner1.png"); /* conferir responsividade da imagem, talves imagem sem textos, ou varias imagens com largura diferente para responsividade*/
+    background-image: url("../images/Banner1.png"); 
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 6px); 
@@ -26,7 +34,6 @@ main {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     width: calc(100% - 20px);
-
 }
 
 #inicio {
@@ -54,7 +61,6 @@ main {
     font-weight: bold;
     margin-bottom: 20px;
     text-shadow: var(--text-shadow);
-    line-height: 1.3;
 }
 
 #inicio p {
@@ -104,57 +110,117 @@ main {
     z-index: 1;
 }
 
+.proposta-section .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proposta-box {
+    background-color: #c9af7f; 
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 80px 30px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.proposta-title {
+    font-family: 'Gluten', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    text-align: center;
+    background-color: #B3824A;
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: calc(var(--border-radius) * 0.75);
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--box-shadow);
+}
+
+.proposta-text {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    
     .banner {
         height: calc(80vh - 5px);
         min-height: 475px;
-        margin: 6px 8px 0;
-        width: calc(100% - 16px);
     }
-    
+
     #inicio h2 {
         font-size: 1.8rem;
     }
-    
+
     #inicio p {
         font-size: 1rem;
     }
 
     #inicio .local {
         margin-top: 18rem;
-    
     }
-    
+
     .scroll-button {
         font-size: 1.8rem;
     }
-}
 
+    .proposta-box {
+        padding: 30px 20px;
+    }
+
+    .proposta-title {
+        font-size: 48px;
+    }
+
+    .proposta-text {
+        font-size: 30px;
+        margin-top: 30px; 
+    }
+}
 
 @media (max-width: 480px) {
     .banner {
         height: calc(65vh - 4px);
         min-height: 386px;
-        margin: 4px 5px 0;
-        width: calc(100% - 10px);
         border-radius: calc(var(--border-radius) * 0.6);
     }
-    
+
     #inicio h2 {
         font-size: 1.5rem;
     }
-    
+
     #inicio p {
         font-size: 0.9rem;
     }
 
     #inicio .local {
         margin-top: 15rem;
-    
     }
+
     .scroll-button {
         font-size: 1.5rem;
         bottom: 25px;
+    }
+
+    .proposta-box {
+        padding: 20px 15px;
+    }
+
+    .proposta-title {
+        font-size: 32px;
+    }
+
+    .proposta-text {
+        font-size: 24px;
+        margin-top: 20px; 
     }
 }

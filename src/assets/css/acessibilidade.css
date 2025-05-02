@@ -1,3 +1,6 @@
+
+/* identificado erro de acessiblidade no aumentar e diminuir fontes, verificar no final do projeto */
+
 :root {
     --cor-primaria: #2c3e50;
     --cor-secundaria: #1a252f;
@@ -89,7 +92,7 @@
 .alto-contraste {
     background-color: #000 !important;
     color: #fff !important;
-    background-image: none !important; /* <-- REMOVE A IMAGEM DE FUNDO */
+    background-image: none !important; 
 }
 
 .alto-contraste body {
@@ -140,6 +143,22 @@
     background-color: #333 !important;
     color: var(--amarelo-contraste) !important;
 }
+
+.alto-contraste .proposta-box {
+    background-color: #000!important;
+    color: var(--amarelo-contraste) !important;
+}
+
+.alto-contraste .proposta-title {
+    background-color: #000!important;
+    color: var(--amarelo-contraste) !important;
+}
+
+.alto-contraste .proposta-text {
+color: var(--cor-fundo) !important;
+}
+
+
 
 /* Animações */
 @keyframes fadeIn {
