@@ -144,20 +144,29 @@
     color: var(--amarelo-contraste) !important;
 }
 
-.alto-contraste .proposta-box {
+.alto-contraste .caixa-proposta {
     background-color: #000!important;
     color: var(--amarelo-contraste) !important;
 }
 
-.alto-contraste .proposta-title {
+.alto-contraste .titulo-proposta  {
     background-color: #000!important;
     color: var(--amarelo-contraste) !important;
 }
 
-.alto-contraste .proposta-text {
+.alto-contraste .texto-conteudo {
 color: var(--cor-fundo) !important;
 }
 
+.alto-contraste .caixa-sabores {
+    background-color: #000!important;
+    color: var(--amarelo-contraste) !important;
+}
+
+.alto-contraste .titulo-sabores  {
+    background-color: #000!important;
+    color: var(--amarelo-contraste) !important;
+}
 
 
 /* Animações */

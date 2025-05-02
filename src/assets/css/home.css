@@ -7,7 +7,7 @@
     --text-color: #333333;
     --accent-color: #E67E22;
     --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); 
     --transition: all 0.3s ease;
     --border-radius: 16px;
 }
@@ -110,14 +110,13 @@ main {
     z-index: 1;
 }
 
-.proposta-section .container {
+.secao-conteudo .container {
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.proposta-box {
-    background-color: #c9af7f; 
+.caixa-conteudo {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 80px 30px;
@@ -126,12 +125,11 @@ main {
     margin: 0 auto;
 }
 
-.proposta-title {
+.titulo-conteudo {
     font-family: 'Gluten', cursive;
     font-weight: 400;
     font-size: 64px;
     text-align: center;
-    background-color: #B3824A;
     color: var(--white);
     padding: 12px 24px;
     border-radius: calc(var(--border-radius) * 0.75);
@@ -142,12 +140,43 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-.proposta-text {
+.texto-conteudo {
     font-family: 'Hammersmith One', sans-serif;
     font-weight: 400;
     font-size: 40px;
     text-align: center;
     color: var(--white);
+}
+.secao-conteudo {
+    margin-bottom: 125px; /
+}
+
+.titulo-proposta {
+    background-color: #B3824A;
+}
+
+.caixa-proposta {
+    background-color: #c9af7f;
+}
+
+.titulo-sabores {
+    background-color: #B3824A;
+}
+
+.caixa-sabores {
+    background-color: rgba(130, 98, 74, 0.38);
+}
+
+.cards-container {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sabores-historia {
+    
 }
 
 /* Responsividade */
@@ -173,17 +202,17 @@ main {
         font-size: 1.8rem;
     }
 
-    .proposta-box {
-        padding: 30px 20px;
+    .caixa-conteudo {
+        padding: 60px 20px;
+        width: 100%;
     }
 
-    .proposta-title {
+    .titulo-conteudo {
         font-size: 48px;
     }
 
-    .proposta-text {
+    .texto-conteudo {
         font-size: 30px;
-        margin-top: 30px; 
     }
 }
 
@@ -211,16 +240,16 @@ main {
         bottom: 25px;
     }
 
-    .proposta-box {
-        padding: 20px 15px;
+    .caixa-conteudo {
+        padding: 40px 15px;
+        width: 100%;
     }
 
-    .proposta-title {
-        font-size: 32px;
+    .titulo-conteudo {
+        font-size: 36px;
     }
 
-    .proposta-text {
+    .texto-conteudo {
         font-size: 24px;
-        margin-top: 20px; 
     }
 }
