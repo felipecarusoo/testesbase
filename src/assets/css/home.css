@@ -7,7 +7,7 @@
     --text-color: #333333;
     --accent-color: #E67E22;
     --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); 
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); 
     --transition: all 0.3s ease;
     --border-radius: 16px;
 }
@@ -23,17 +23,15 @@ main {
 }
 
 .banner {
-    background-image: url("../images/Banner1.png"); 
-    background-size: cover;
-    background-position: center center;
+    background: url("../images/Banner1.png") center/cover no-repeat;
     height: calc(100vh - 6px); 
     min-height: 594px;
-    position: relative;
     margin: 7px 10px 0;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
     width: calc(100% - 20px);
+    position: relative;
 }
 
 #inicio {
@@ -42,10 +40,10 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    position: relative;
     text-align: center;
     color: var(--white);
     padding: 20px;
+    position: relative;
 }
 
 #inicio .container {
@@ -56,18 +54,21 @@ main {
     z-index: 2;
 }
 
+#inicio h2,
+#inicio p {
+    text-shadow: var(--text-shadow);
+    margin-bottom: 10px;
+}
+
 #inicio h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: var(--text-shadow);
 }
 
 #inicio p {
     font-size: clamp(0.9rem, 3vw, 1.2rem);
     font-weight: 200;
-    text-shadow: var(--text-shadow);
-    margin-bottom: 10px;
 }
 
 #inicio .local {
@@ -102,12 +103,13 @@ main {
 #inicio::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: 1;
+}
+
+.secao-conteudo {
+    margin-bottom: 100px; 
 }
 
 .secao-conteudo .container {
@@ -120,9 +122,9 @@ main {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 80px 30px;
-    position: relative;
     width: 90%;
     margin: 0 auto;
+    position: relative;
 }
 
 .titulo-conteudo {
@@ -147,11 +149,10 @@ main {
     text-align: center;
     color: var(--white);
 }
-.secao-conteudo {
-    margin-bottom: 125px; /
-}
 
-.titulo-proposta {
+/* Cores por seção */
+.titulo-proposta,
+.titulo-sabores {
     background-color: #B3824A;
 }
 
@@ -159,61 +160,95 @@ main {
     background-color: #c9af7f;
 }
 
-.titulo-sabores {
-    background-color: #B3824A;
-}
-
 .caixa-sabores {
     background-color: rgba(130, 98, 74, 0.38);
 }
 
+/* Cards de pratos */
 .cards-container {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between; 
+    gap: 24px;
+    padding-inline: 100px; 
+    padding-top: 24px;
+}
+.card-prato {
+    background: #F5E7B7;
+    border-radius: 24px;
+    padding: 20px 16px;
+    text-align: center;
+    width: 48%;
+    max-width: 340px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;
+    background-image: linear-gradient(#F5E7B7, #F5E7B7), linear-gradient(to bottom right, #d8b97a, #fff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sabores-historia {
-    
+.card-prato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
+.titulo-prato {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #712E18;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.titulo-prato::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #712E18;
+    margin: 6px auto 12px auto;
+    border-radius: 1px;
+}
+
+.img-prato {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.descricao-prato {
+    font-family: 'Gluten', cursive;
+    font-size: 20px;
+    font-weight: 800;
+    color: #9C4E34;
+    line-height: 1.2;
+}
+
+
+/* Media Queries */
 @media (max-width: 768px) {
     .banner {
         height: calc(80vh - 5px);
         min-height: 475px;
     }
 
-    #inicio h2 {
-        font-size: 1.8rem;
-    }
-
-    #inicio p {
-        font-size: 1rem;
-    }
-
-    #inicio .local {
-        margin-top: 18rem;
-    }
-
-    .scroll-button {
-        font-size: 1.8rem;
-    }
+    #inicio h2 { font-size: 1.8rem; }
+    #inicio p { font-size: 1rem; }
+    #inicio .local { margin-top: 18rem; }
+    .scroll-button { font-size: 1.8rem; }
 
     .caixa-conteudo {
         padding: 60px 20px;
         width: 100%;
     }
 
-    .titulo-conteudo {
-        font-size: 48px;
-    }
-
-    .texto-conteudo {
-        font-size: 30px;
-    }
+    .titulo-conteudo { font-size: 48px; }
+    .texto-conteudo { font-size: 30px; }
 }
 
 @media (max-width: 480px) {
@@ -223,33 +258,15 @@ main {
         border-radius: calc(var(--border-radius) * 0.6);
     }
 
-    #inicio h2 {
-        font-size: 1.5rem;
-    }
-
-    #inicio p {
-        font-size: 0.9rem;
-    }
-
-    #inicio .local {
-        margin-top: 15rem;
-    }
-
+    #inicio h2 { font-size: 1.5rem; }
+    #inicio p { font-size: 0.9rem; }
+    #inicio .local { margin-top: 15rem; }
     .scroll-button {
         font-size: 1.5rem;
         bottom: 25px;
     }
 
-    .caixa-conteudo {
-        padding: 40px 15px;
-        width: 100%;
-    }
-
-    .titulo-conteudo {
-        font-size: 36px;
-    }
-
-    .texto-conteudo {
-        font-size: 24px;
-    }
+    .caixa-conteudo { padding: 40px 15px; }
+    .titulo-conteudo { font-size: 36px; }
+    .texto-conteudo { font-size: 24px; }
 }

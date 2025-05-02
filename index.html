@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>1º Festival Gastronômico Campo na Cidade</title>
-    <meta name="description" content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana em Curitiba">
+    <meta name="description"
+        content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana em Curitiba">
     <meta name="keywords" content="festival gastronômico, comida regional, Curitiba, campo e cidade">
     <meta name="author" content="Seu Nome">
     <meta property="og:title" content="1º Festival Gastronômico | Sabores do Campo na Cidade">
-    <meta property="og:description" content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana">
+    <meta property="og:description"
+        content="Festival que celebra a conexão entre produtores rurais e a gastronomia urbana">
     <meta property="og:type" content="website">
     <meta property="og:url" content="link do deploy">
     <meta property="og:image" content="./src/assets/images/#">
@@ -42,13 +44,14 @@
 
     <!-- Menu de Acessibilidade -->
     <div id="acessibilidade" class="menu-acessibilidade">
-        <button id="botao-acessibilidade" class="btn-acessibilidade" aria-label="Menu de acessibilidade" aria-expanded="false">
+        <button id="botao-acessibilidade" class="btn-acessibilidade" aria-label="Menu de acessibilidade"
+            aria-expanded="false">
             <i class="bi bi-universal-access"></i>
         </button>
         <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
             <button id="aumentar-fonte" class="btn-opcao" aria-label="Aumentar tamanho da fonte">
                 <i class="bi bi-zoom-in"></i> A+
-            </button>       
+            </button>
             <button id="diminuir-fonte" class="btn-opcao" aria-label="Diminuir tamanho da fonte">
                 <i class="bi bi-zoom-out"></i> A-
             </button>
@@ -96,33 +99,107 @@
             <div class="button-container">
                 <button id="simular" class="btn btn-warning mt-3">Simular dia do Festival</button>
             </div>
-        </section>        
+        </section>
 
         <section id="proposta" class="secao-conteudo secao-proposta">
             <div class="container">
-              <div class="caixa-conteudo caixa-proposta">
-                <h2 class="titulo-conteudo titulo-proposta">PROPOSTA</h2>
-                <p class="texto-conteudo">
-                    Imagine o sabor do campo chegando até você, no coração da cidade. O 1º Festival Gastronômico “Sabores do Campo na Cidade” é mais que um evento — é um encontro de mundos. De um lado, produtores locais trazendo ingredientes fresquinhos, direto da roça. Do outro, chefs urbanos prontos para transformar tudo isso em experiências únicas. Venha conhecer, provar, aprender e se conectar. Porque quando o campo e a cidade celebram juntos, quem ganha é todo mundo.
-                </p>
-                <a href="#sabores-historia" class="scroll-button">
-                    <i class="bi bi-chevron-double-down"></i>
-                </a>
-              </div>
-            </div>
-          </section>
-
-        
-          <section id="sabores-historia" class="secao-conteudo secao-sabores">
-            <div class="container">
-              <div class="caixa-conteudo caixa-sabores">
-                <h3 class="titulo-conteudo titulo-sabores">Sabores com História</h3>
-                <div class="cards-container">
-                  <!-- Cards via JavaScript -->
+                <div class="caixa-conteudo caixa-proposta">
+                    <h2 class="titulo-conteudo titulo-proposta">PROPOSTA</h2>
+                    <p class="texto-conteudo">
+                        Imagine o sabor do campo chegando até você, no coração da cidade. O 1º Festival Gastronômico
+                        “Sabores do Campo na Cidade” é mais que um evento — é um encontro de mundos. De um lado,
+                        produtores locais trazendo ingredientes fresquinhos, direto da roça. Do outro, chefs urbanos
+                        prontos para transformar tudo isso em experiências únicas. Venha conhecer, provar, aprender e se
+                        conectar. Porque quando o campo e a cidade celebram juntos, quem ganha é todo mundo.
+                    </p>
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
+
+
+        <section id="sabores-historia" class="secao-conteudo secao-sabores">
+            <div class="container">
+                <div class="caixa-conteudo caixa-sabores">
+                    <h3 class="titulo-conteudo titulo-sabores">Sabores com História</h3>
+                    <div class="cards-container">
+                        <!-- Barreado -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">BARREADO</h5>
+                            <img src="src/assets/images/barreado.png" class="img-prato" alt="Barreado">
+                            <p class="descricao-prato">
+                                Um prato de carne cozida lentamente, geralmente com costelas de boi, acompanhado
+                                de pão, arroz e farinha de mandioca.
+                            </p>
+                            <a href="src/assets/pages/barreado.html" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+        
+                        <!-- Pinhão -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">Vaca Atolada</h5>
+                            <img src="src/assets/images/vaca atolada.jpg" class="img-prato" alt="Vaca atolada">
+                            <p class="descricao-prato">
+                                Um prato com carne bovina, mandioca, linguiça e outros ingredientes, cozido em fogo baixo. 
+                            </p>
+                            <a href="src/assets/pages/#" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+        
+                        <!-- Porco no Rolete -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">CARNE DE ONÇA</h5>
+                            <img src="src/assets/images/carne de onca.jpg" class="img-prato" alt="Carne de Onça">
+                            <p class="descricao-prato">
+                                Uma carne seca cozida em fogo baixo, também conhecida como carne de sol ou carne desfiada.
+                            </p>
+                            <a href="src/assets/pages/#" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-container mt-4">
+                        <!-- PÃO NO BAFO -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">PÃO NO BAFO</h5>
+                            <img src="src/assets/images/pao no bafo.jpg" class="img-prato" alt="Pão no bafo">
+                            <p class="descricao-prato">
+                                Pão cozido no vapor, frequentemente com carne, um clássico dos Campos Gerais. 
+                            </p>
+                            <a href="src/assets/pages/#" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+                    
+                        <!-- BOLO DE PINHÃO -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">BOLO DE PINHÃO</h5>
+                            <img src="src/assets/images/bolo de pinhao.png" class="img-prato" alt="Bolo de Pinhão">
+                            <p class="descricao-prato">
+                                Bolo de Pinhão: Bolo feito com pinhões cozidos e moídos, farinha de trigo, açúcar, ovos e manteiga. 
+                            </p>
+                            <a href="src/assets/pages/#" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+                    
+                        <!-- DOCE DE PINHÃO -->
+                        <div class="card card-prato">
+                            <h5 class="titulo-prato">DOCE DE PINHÃO</h5>
+                            <img src="src/assets/images/doce de pinhao.jpg" class="img-prato" alt="Doce de Pinhão">
+                            <p class="descricao-prato">
+                                 Doce tradicional feito com pinhões, açúcar e água, muito apreciado na região. 
+                            </p>
+                            <a href="src/assets/pages/porco-no-rolete.html" class="btn btn-success text-white border border-success">
+                                <i class="bi bi-link-45deg"></i> Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <section id="contato" class="formulario-contato" aria-label="Seção de contato">
             <h2>Entre em contato</h2>
