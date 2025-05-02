@@ -168,6 +168,21 @@ color: var(--cor-fundo) !important;
     color: var(--amarelo-contraste) !important;
 }
 
+.alto-contraste .card-prato {
+    background: #1a1a1a;
+}
+
+.alto-contraste .titulo-prato {
+    color: var(--amarelo-contraste);
+
+}
+
+
+.alto-contraste .descricao-prato {
+    color: var(--cor-fundo);
+
+}
+
 
 /* Animações */
 @keyframes fadeIn {

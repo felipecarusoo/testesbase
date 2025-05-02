@@ -231,6 +231,19 @@ main {
 
 
 /* Media Queries */
+
+@media (max-width: 1024px) {
+    .cards-container {
+        padding-inline: 40px;
+        justify-content: center;
+        margin-top: 135px;
+    }
+
+    .card-prato {
+        width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .banner {
         height: calc(80vh - 5px);
@@ -249,7 +262,28 @@ main {
 
     .titulo-conteudo { font-size: 48px; }
     .texto-conteudo { font-size: 30px; }
+
+    .cards-container {
+        padding-inline: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .card-prato {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .titulo-prato {
+        font-size: 32px;
+    }
+
+    .descricao-prato {
+        font-size: 18px;
+    }
 }
+
 
 @media (max-width: 480px) {
     .banner {
@@ -269,4 +303,15 @@ main {
     .caixa-conteudo { padding: 40px 15px; }
     .titulo-conteudo { font-size: 36px; }
     .texto-conteudo { font-size: 24px; }
+    .cards-container {
+        padding-inline: 10px;
+    }
+
+    .titulo-prato {
+        font-size: 28px;
+    }
+
+    .descricao-prato {
+        font-size: 16px;
+    }
 }
