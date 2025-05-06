@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 :root {
-    --white: #FFF6DA;
+    --white: #FFFFFF;
     --text-color: #333333;
     --accent-color: #E67E22;
     --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -151,12 +151,12 @@ main {
 }
 
 /* Cores por seção */
-.titulo-proposta,
+.titulo-conteudo,
 .titulo-sabores {
     background-color: #B3824A;
 }
 
-.caixa-proposta {
+.caixa-conteudo {
     background-color: #c9af7f;
 }
 
@@ -228,6 +228,26 @@ main {
     color: #9C4E34;
     line-height: 1.2;
 }
+
+.lista-regras {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lista-regras li {
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px 20px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .lista-regras li:hover {
+    background-color: #3a6b35; 
+    cursor: default; /* Mantém o cursor padrão */
+  }
+  
 
 
 /* Media Queries */

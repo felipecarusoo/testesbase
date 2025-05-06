@@ -144,27 +144,32 @@
     color: var(--amarelo-contraste) !important;
 }
 
-.alto-contraste .caixa-proposta {
-    background-color: #000!important;
+.alto-contraste .caixa-conteudo{
+    background-color: #1a1a1a!important;
     color: var(--amarelo-contraste) !important;
+    border: 1px solid rgba(255, 191, 0, 0.932);
 }
 
-.alto-contraste .titulo-proposta  {
+.alto-contraste .titulo-conteudo {
     background-color: #000!important;
+    border: 1px solid rgba(255, 191, 0, 0.932);
     color: var(--amarelo-contraste) !important;
 }
 
 .alto-contraste .texto-conteudo {
 color: var(--cor-fundo) !important;
+
 }
 
 .alto-contraste .caixa-sabores {
     background-color: #000!important;
+    border: 1px solid rgba(255, 191, 0, 0.932);
     color: var(--amarelo-contraste) !important;
 }
 
 .alto-contraste .titulo-sabores  {
     background-color: #000!important;
+    border: 1px solid rgba(255, 191, 0, 0.932);
     color: var(--amarelo-contraste) !important;
 }
 
@@ -173,6 +178,7 @@ color: var(--cor-fundo) !important;
 }
 
 .alto-contraste .titulo-prato {
+    
     color: var(--amarelo-contraste);
 
 }
