@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url(../css/variaveis.css);
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #67220b; 
+  padding: var(--espacamento-medio) var(--espacamento-grande);
+  background-color: var(--cor-bordo); 
   position: sticky; 
   top: 0; 
-  z-index: 1000; 
+  z-index: var(--z-index-menu-acessibilidade); 
   height: 80px;
   min-height: 80px; 
 }
@@ -27,7 +28,7 @@
 .header-list {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: var(--espacamento-medio);
   align-items: center; 
   height: 100%;
   margin: 0;
@@ -45,23 +46,23 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 0 0.5rem;
+  padding: 0 var(--espacamento-pequeno);
   font-family: "JetBrains Mono", monospace;
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff5e0;
+  color: var(--cor-contraste-branco);
   transition: transform 0.2s ease, color 0.2s ease;
   line-height: 1; 
 }
 
 .header-list-item a:hover {
-  color: #889E73; /* Tom verde */
+  color: var(--cor-verde);
   transform: scale(1.05);
   font-weight: 700;
 }
 
 .header-list-item a:active {
-  color: #889E73;
+  color: var(--cor-verde);
   transform: scale(1.05);
 }
 
@@ -74,7 +75,7 @@
 
 .header-button i {
   font-size: 2rem;
-  color: #ffffff;
+  color: var(--cor-contraste-branco);
 }
 
 /* Responsividade */
@@ -85,10 +86,10 @@
     right: 0;
     top: 60px;
     flex-direction: column;
-    background-color: #67220b;
-    border: 2px solid #ccc;
-    padding: 0.5rem 0 4.5rem 0;
-    z-index: 999;
+    background-color: var(--cor-bordo);
+    border: 2px solid var(--cor-borda);
+    padding: var(--espacamento-pequeno) 0 var(--espacamento-grande) 0;
+    z-index: var(--z-index-menu-acessibilidade);
   }
 
   .header-list.show {
@@ -97,13 +98,13 @@
 
   .header-list-item a {
     display: block;
-    padding: 0.75rem 1rem;
+    padding: var(--espacamento-medio) var(--espacamento-grande);
     transition: background-color 0.3s ease;
   }
   
 
   .header-list-item a:hover {
-    color: #889E73; 
+    color: var(--cor-verde); 
     transition: background-color 0.3s ease;
   }
   .header-button {

@@ -1,0 +1,51 @@
+:root {
+    /* Cores principais */
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #1a252f;
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #212529;
+    --cor-borda: #dee2e6;
+    --cor-hover: #e9ecef;
+    --cor-verde: #3a6b35;
+    --cor-laranja: #d9822b;
+    --cor-bordo: #67220b; 
+    --cor-fundo-claro: #fff8f0; 
+
+    /* Cores de contraste */
+    --cor-contraste-fundo: #000000;
+    --cor-contraste-branco: #ffffff;
+    --cor-contraste-destaque: #ffff00;
+    --cor-contraste-borda: rgba(255, 191, 0, 0.932);
+    --cor-contraste-hover: #333333;
+  
+    /* Cores adicionais */
+    --cor-fundo-escuro: #1a1a1a;
+  
+    /* Sombras */
+    --sombra-leve: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --sombra-media: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --texto-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    --caixa-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); 
+  
+    /* Tipografia */
+    --fonte-base: 16px;
+    --fonte-pequena: 0.9rem;
+    --fonte-icone: 1rem;
+  
+    /* Espaçamentos */
+    --espacamento-pequeno: 0.5rem;
+    --espacamento-medio: 1rem;
+    --espacamento-grande: 1.5rem;
+  
+    /* Tamanhos de botão */
+    --tamanho-botao: 3rem;
+    --tamanho-botao-responsivo: 2.8rem;
+  
+    /* Z-index */
+    --z-index-menu-acessibilidade: 1000;
+
+    /* outros */
+    --transition: all 0.3s ease;
+    --border-radius: 16px;
+
+}

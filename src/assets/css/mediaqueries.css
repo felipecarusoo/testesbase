@@ -1,0 +1,128 @@
+@media (max-width: 480px) {
+    .banner {
+      height: calc(65vh - 4px);
+      min-height: 386px;
+      border-radius: calc(var(--border-radius) * 0.6);
+    }
+  
+    #inicio h2 { font-size: 1.5rem; }
+    #inicio p { font-size: 0.9rem; }
+    #inicio .local { margin-top: 15rem; }
+    .scroll-button {
+      font-size: 1.5rem;
+      bottom: 25px;
+    }
+  
+    .caixa-conteudo { padding: 40px 15px; }
+    .titulo-conteudo { font-size: 36px; }
+    .texto-conteudo { font-size: 24px; }
+    .cards-container {
+      padding-inline: 10px;
+    }
+  
+    .titulo-prato { font-size: 28px; }
+    .descricao-prato { font-size: 16px; }
+  
+    .titulo-contato { font-size: 1.5em; }
+    .info-contato p { font-size: 1em; }
+  
+    .contato-info form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .contato-info input,
+    .contato-info textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .contato-flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contato-info,
+    .formulario-area,
+    .formulario-contato {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      height: calc(80vh - 5px);
+      min-height: 475px;
+    }
+  
+    #inicio h2 { font-size: 1.8rem; }
+    #inicio p { font-size: 1rem; }
+    #inicio .local { margin-top: 18rem; }
+    .scroll-button { font-size: 1.8rem; }
+  
+    .caixa-conteudo {
+      padding: 60px 20px;
+      width: 100%;
+    }
+  
+    .titulo-conteudo { font-size: 48px; }
+    .texto-conteudo { font-size: 30px; }
+  
+    .cards-container {
+      padding-inline: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+  
+    .card-prato {
+      width: 100%;
+      max-width: 360px;
+    }
+  
+    .titulo-prato { font-size: 32px; }
+    .descricao-prato { font-size: 18px; }
+  }
+
+  @media (max-width: 1024px) {
+    .cards-container {
+      padding-inline: 40px;
+      justify-content: center;
+      margin-top: 135px;
+    }
+  
+    .card-prato {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contato-flex {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .contato-info,
+    .formulario-area {
+      flex: 1;
+    }
+  
+    .contato-info {
+      padding: 0 10px 0 0;
+      width: 100%;
+      overflow-wrap: break-word;
+    }
+  
+    .formulario-area {
+      padding-left: 40px;
+    }
+  }
+  
+    
+    

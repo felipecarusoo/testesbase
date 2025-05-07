@@ -1,14 +1,9 @@
-:root {
-    --verde: #3a6b35;
-    --laranja: #d9822b;
-    --fundo: #fff8f0;
-    --texto: #5c4033;
-}
+@import url(../css/variaveis.css);
 
 body {
-    background-color: var(--fundo);
+    background-color: var(--cor-fundo-claro);
     font-family: 'Chakra Petch', sans-serif;
-    color: var(--texto);
+    color: var(--cor-texto);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -18,28 +13,28 @@ body {
     margin: 50px auto;
     padding: 30px;
     max-width: 900px;
-    background-color: #fdf6ec;
+    background-color: var(--cor-fundo-claro); /* Usando a variável de fundo claro */
     border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: var(--sombra-leve);
     position: relative;
     overflow: hidden;
-    text-align: center; /* Centralizando os títulos dentro da box */
+    text-align: center;
 }
 
 .contador-de-tempo h2 {
     font-size: 32px;
-    color: var(--verde);
+    color: var(--cor-verde);
 }
 
 .contador-de-tempo h2 span {
-    color: var(--laranja);
+    color: var(--cor-laranja);
 }
 
 .contador-de-tempo h3 {
     font-size: 22px;
-    color: var(--texto);
+    color: var(--cor-texto);
     margin-top: 10px;
-    text-align: center; /* Centralizando o h3 também */
+    text-align: center;
 }
 
 .counter {
@@ -58,13 +53,13 @@ body {
 .counter-digit-number {
     font-size: 60px;
     font-weight: bold;
-    color: var(--verde);
+    color: var(--cor-verde);
     margin: 0;
 }
 
 .counter-digit-label {
     font-size: 18px;
-    color: var(--texto);
+    color: var(--cor-texto);
     margin-top: 5px;
 }
 
@@ -76,8 +71,8 @@ body {
 }
 
 #simular {
-    background-color: var(--laranja);
-    color: white;
+    background-color: var(--cor-laranja);
+    color: var(--cor-contraste-branco);
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -87,7 +82,7 @@ body {
 }
 
 #simular:hover {
-    background-color: #d97d1f;
+    background-color: var(--cor-laranja);
 }
 
 #simular:active {
@@ -97,17 +92,6 @@ body {
 /* Animação de pulso no cronômetro quando o festival começa */
 .evento-ativo .counter-digit-number {
     animation: pulso 1s infinite;
-    color: #d97d1f; /* Altera a cor para um tom de laranja */
+    color: var(--cor-laranja); 
 }
 
-@keyframes pulso {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
