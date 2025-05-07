@@ -190,6 +190,28 @@ color: var(--cor-fundo) !important;
 }
 
 
+.alto-contraste .secao-contato {
+    background: #000 !important;
+}
+
+
+.alto-contraste .formulario-contato input,
+.formulario-contato textarea {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 191, 0, 0.932);
+  color: #ffffff;
+}
+
+.alto-contraste .formulario-contato button {
+  background-color: rgba(255, 191, 0, 0.932);
+  color: var(--cor-texto);
+}
+
+.alto-contraste .formulario-contato button:hover {
+  background-color: #3a6b35;
+  color: var(--cor-fundo);
+}
+
 /* Animações */
 @keyframes fadeIn {
     from {
